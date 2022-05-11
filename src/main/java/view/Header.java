@@ -10,7 +10,7 @@ public class Header extends JPanel
 {
     public Header(Rectangle bounds, List<Button> buttons)
     {
-        setBackground(Color.YELLOW);
+        setBackground(Color.WHITE);
         setBounds(bounds);
         setLayout(null);
         placeButtons(buttons);
