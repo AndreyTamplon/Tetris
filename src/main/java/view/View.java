@@ -42,7 +42,7 @@ public class View extends JFrame implements Subscriber
         layeredPane = new JLayeredPane();
         layeredPane.setBounds(0, 50, getWidth(), getHeight() - 50);
         layeredPane.setBackground(Color.WHITE);
-        getContentPane().add(layeredPane);
+        add(layeredPane);
         JPanel gamePanel = new JPanel();
         gamePanel.setLayout(new BoxLayout(gamePanel, BoxLayout.X_AXIS));
         gamePanel.add(boardView);
