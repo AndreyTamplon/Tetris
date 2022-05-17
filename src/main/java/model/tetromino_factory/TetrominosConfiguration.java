@@ -2,8 +2,6 @@ package model.tetromino_factory;
 
 import exceptions.ConfigurationException;
 import common.Configuration;
-import controller.ControllerConfiguration;
-
 import java.io.IOException;
 
 public class TetrominosConfiguration extends Configuration
@@ -24,6 +22,6 @@ public class TetrominosConfiguration extends Configuration
     }
     public void setConfiguration(String configurationFileName) throws IOException
     {
-        getProperties().load(ControllerConfiguration.class.getResourceAsStream(configurationFileName));
+        getProperties().load(TetrominosConfiguration.class.getResourceAsStream(configurationFileName));
     }
 }
