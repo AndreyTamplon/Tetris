@@ -35,7 +35,6 @@ public class View extends JFrame implements Subscriber
 
     private void initialiseUI()
     {
-
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         getContentPane().setLayout(null);
         setResizable(false);

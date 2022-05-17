@@ -1,7 +1,6 @@
 package common;
 
 import exceptions.ConfigurationException;
-import controller.ControllerConfiguration;
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -13,7 +12,7 @@ public class Configuration
     public Configuration(String configurationFileName) throws ConfigurationException
     {
         properties = new Properties();
-        try (InputStream inputStream = ControllerConfiguration.class.getResourceAsStream(configurationFileName))
+        try (InputStream inputStream = Configuration.class.getResourceAsStream(configurationFileName))
         {
             properties.load(inputStream);
         }
