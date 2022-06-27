@@ -23,5 +23,4 @@ public class Header extends JPanel
             add(button);
         }
     }
-
 }
